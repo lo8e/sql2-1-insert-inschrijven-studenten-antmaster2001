@@ -21,3 +21,7 @@ UPDATE studenten
 SET geboortedatum = "1962-06-27"
 WHERE ov_nummer = 90000;
 
+# werkt niet vanwegen safe update mode
+UPDATE studenten
+SET actief = false
+WHERE inschrijvings_datum <= "1-1-2017";
